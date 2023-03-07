@@ -28,6 +28,17 @@
 }
 
 @media all and (max-width: 991px) {
+    
+    #blog-slider {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ccm {
+      width: calc((100% / 2) - (20px * 1)) ;
+      height: auto 
+    }
+
+
     .entete_logo_results {
         top: 0px ;
     }
@@ -52,6 +63,7 @@
     #entete_logo {
         position: fixed;
         z-index: 1200;
+        width: 100%;
     }
     #trouver_departement {
         width: 100% ;
@@ -78,6 +90,27 @@
 }
 
 @media all and (max-width: 767px) {
+    .ccm {
+        width: 100% ;
+    }
+
+    #blog-slider {
+      position: relative ;
+      display:grid; 
+      gap: 15px 0px; 
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 20px;
+      /* height: 380px; */
+      /* overflow: auto !important; */
+    }
+
+    #img-rejoindre {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+
     #form-banniere form {
         width: 480px;
     }

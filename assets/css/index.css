@@ -87,7 +87,6 @@ body {
 
 #entete_logo {
   background: #2b2929;
- 
 }
 #entete_logo img {
   width: 50px;
@@ -471,12 +470,11 @@ body {
 .ccm-flex {
   display: flex ;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 .ccm {
-  width: 300px ;
-  height: 400px ;
-  margin-left: 20px ;
+  width: calc((100% / 3) - (20px * 2)) ;
+  height: auto ;
 }
 
 .bg-customBlueDark {
@@ -517,9 +515,9 @@ padding-bottom: 0px;
 .footer-card {
   border: none;
   background-color: transparent;
-  height: 150px;
+  height: 100%;
   padding-top: 0px;
-padding-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 
@@ -605,6 +603,7 @@ padding-bottom: 0px;
 /* Transformation */
 .card-height-reform {
   height: 450px ;
+  height: max-content;
   box-shadow: 0px 0px 10px 10px #f5eee6;
 }
 
@@ -635,11 +634,25 @@ padding-bottom: 0px;
   background-color: transparent ;
   border-top: none ;
 }
+
 .text-limiter {
-  word-wrap: break-word;
+  /* word-wrap: break-word;
   overflow: hidden;
-  max-height: 3.6em; /* (Number of lines you want visible) * (line-height) */
+  max-height: 3.6em; 
+  // (Number of lines you want visible) * (line-height) 
+  line-height: 1.2em; */
+  
   line-height: 1.2em;
+  min-height: 58px;
+	text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  text-align: left;
+  text-align: justify;
 }
 
 .btn-warning-reform {
@@ -743,7 +756,7 @@ padding-bottom: 0px;
 
 .card-polaroid .card-header {
   border-bottom: none ;
-  min-width: 274px ;
+  min-width: 100% ;
   min-height: 200px ;
   background-color: white;
 }
@@ -770,7 +783,7 @@ top: -10px !important;
 .desc-polaroid {
   /* position: absolute; */
   width: 100% ;
-  height: 50px;
+  height: 70px;
   /* top: 12px; */
 }
 .desc-polaroid p {
@@ -1172,22 +1185,33 @@ top: -10px !important;
 
 /* Nous rejoindre */
 #img-rejoindre img {
-  width: 350px ;
-  margin-right: 20px ;
+  width: 100% ;
+  min-height: 100%;
+  height: auto;
+  object-fit: cover;
 }
+
+#img-rejoindre {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .element-rejoindre {
   position: relative;
 }
+
 .element-to-show {
   background-color: rgba(0,0,0,0.8) ;
   height: 60px ;
-  width: 350px ;
+  width: 100% ;
   position: absolute;
   bottom: 0px ;
   display: flex ;
   justify-content: center ;
   transition: .5s ease;
 }
+
 .element-rejoindre:hover .element-to-show  {
   height: 100%;
 }
@@ -1624,9 +1648,9 @@ width: 150px;
 #blog-slider {
   position: relative ;
   display:grid; 
-  gap: 30px; 
-  grid-template-columns: repeat(3, 1fr);;
-  margin-top: 35px;
+  gap: 15px 30px; 
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
   /* height: 380px; */
   /* overflow: auto !important; */
 }
