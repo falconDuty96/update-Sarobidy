@@ -220,7 +220,7 @@ body {
 } */
 #form-banniere 
 {
-  height: 100% ;
+  height: calc(100% - (235px / 2)) ;
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -288,12 +288,12 @@ body {
   height: 100% ;
 }
 #demo .carousel-item {
-  height: 700px ;
+  height: 100% ;
   width: 100%;
 }
 #banniere {
   position: relative;
-  height: calc(100vh - (61px + 86px)) ;
+  height: calc(100vh - (72px + 86px + 3rem + 50px)) ;
   min-height: 500px;
 }
 #titre_banniere {
