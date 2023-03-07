@@ -7,7 +7,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="device=device-width,initial-scale=1.0">
 
-	
+
 	<title>Igoguide</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -27,17 +27,17 @@
 <body>
 	
 	<!-- Entete -->
-	<div class="container-fluid" id="entete_logo">
-		<!-- Conteneur centré -->
-		<div class="container pb-0">	
-			<div class="row">
+	<div class="" id="entete_logo">
+		<div class="container">
+			<!-- Conteneur centré -->
+			<div class=" pb-0 row">	
 				<!-- Place logo -->
-				<div class="col-xl-6 col-md-6 col-6" id="entete_logo_gauche">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-6" id="entete_logo_gauche">
 					<img src="assets/image/logo.png" alt="logo Igoguide">
 					<span class="ml-2" id="slogan">Vos envies coïncident !</span>
 				</div>
 
-				<div class="col-xl-6 col-md-6 col-sm-6" id="entete_logo_droite">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" id="entete_logo_droite">
 					
 					<a href="login_utilisateur.html" class="btn btn-dark btn-log-container"><i class="fa-solid fa-user icon-log"></i><span class="btn-log">Se connecter</span></a>
 					<a href="login.html" class="btn btn-dark btn-log-container"><i class="fa-solid fa-user-tie icon-log"></i><span class="btn-log">Espace Pro</span></a>
@@ -53,347 +53,344 @@
 					</div>
 
 				</div>
-				<div class="col-xl-6 col-md-6 col-sm-6 col-6">
+
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
 					<i class="fa-solid fa-bars float-right" id="bars" state="off"></i>
 				</div>
-				
-			</div>		
-		</div>	
+			</div>	
 
-		<div id="accordion" class="container d-none">
-			<div class="card">
+			<div id="accordion" class="container d-none">
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h5 class="mb-0">
+							<img src="assets/icone/ic_a.png" alt="" class="nav_icone_bars">
+						<button class="btn btn-link text-white" data-toggle="collapse" data-target="#collapseNone" aria-expanded="false" aria-controls="collapseNone">
+							Accueil
+						</button>
+						</h5>
+					</div>
+				</div>
+				<div class="card">
 				<div class="card-header" id="headingOne">
 					<h5 class="mb-0">
-						<img src="assets/icone/ic_a.png" alt="" class="nav_icone_bars">
-					<button class="btn btn-link text-white" data-toggle="collapse" data-target="#collapseNone" aria-expanded="false" aria-controls="collapseNone">
-						Accueil
+						<img src="assets/icone/herbergement.png" alt="" class="nav_icone_bars">
+					<button class="btn btn-link text-white" data-toggle="modal" data-target="#myModal1" aria-expanded="false" aria-controls="collapseOne">
+						Hébergement
 					</button>
 					</h5>
 				</div>
-			</div>	
-			<div class="card">
-			  <div class="card-header" id="headingOne">
-				<h5 class="mb-0">
-					<img src="assets/icone/herbergement.png" alt="" class="nav_icone_bars">
-				  <button class="btn btn-link text-white" data-toggle="modal" data-target="#myModal1" aria-expanded="false" aria-controls="collapseOne">
-					Hébergement
-				  </button>
-				</h5>
-			  </div>
-		  
-			  
-			</div>
-			<div class="card">
-			  <div class="card-header" id="headingTwo">
-				<h5 class="mb-0">
-					<img src="assets/icone/Ou_Boire.png" alt="" class="nav_icone_bars" id="icone_ou_boire"> 
-				  <button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal2" aria-expanded="false" aria-controls="collapseTwo">
-					
-					Où boire
-				  </button>
-				</h5>
-			  </div>
-			  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-				<div class="card-body">
-					
-				</div>
-			  </div>
-			</div>
-			<div class="card">
-			  <div class="card-header" id="headingThree">
-				<h5 class="mb-0">
-					<img src="assets/icone/Ou_Manger.png" alt="" class="nav_icone_bars" id="icone_ou_manger">
-					<button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal3" aria-expanded="false" aria-controls="collapseThree">
-					
-					Où manger
-				  </button>
-				</h5>
-			  </div>
-			  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-				<div class="card-body">
-					<ul>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_whiskies.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Lounges / Whiskies / Cocktails</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_rooftop.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à rooftop</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_vin.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à vins</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_pubs _ tapas.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Pubs / Bars à tapas</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_billard.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à thèmes / Jeux / Billards</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/concert_bar.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Concerts bars</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_chat.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à chats</a>
-							<!-- </div> -->
-						</li>
-					</ul>
-				</div>
-			  </div>
-			</div>
-			<div class="card">
-				<div class="card-header" id="headingFour">
-				  <h5 class="mb-0">
-					<img src="assets/icone/Balades.png" alt="" class="nav_icone_bars" id="icone_balade"> 
-					  <button class="btn btn-link text-white collapsed"data-toggle="modal" data-target="#myModal4" aria-expanded="false" aria-controls="collapseFour">
-					  
-					  Balades
-					</button>
-				  </h5>
-				</div>
-				<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-				  <div class="card-body">
-					<ul>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_whiskies.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Lounges / Whiskies / Cocktails</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_rooftop.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à rooftop</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_vin.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à vins</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_pubs _ tapas.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Pubs / Bars à tapas</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_billard.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à thèmes / Jeux / Billards</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/concert_bar.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Concerts bars</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_chat.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à chats</a>
-							<!-- </div> -->
-						</li>
-					</ul>
-				  </div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-header" id="headingFive">
-				  <h5 class="mb-0">
-					<img src="assets/icone/Activites.png" alt="" class="nav_icone_bars" id="icone_activite">
-					  <button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal5" aria-expanded="false" aria-controls="collapseFive">
-					  
-						Activités
-					</button>
-				  </h5>
-				</div>
-				<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-				  <div class="card-body">
-					<ul>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_whiskies.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Lounges / Whiskies / Cocktails</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_rooftop.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à rooftop</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_vin.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à vins</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_pubs _ tapas.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Pubs / Bars à tapas</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_billard.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à thèmes / Jeux / Billards</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/concert_bar.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Concerts bars</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_chat.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à chats</a>
-							<!-- </div> -->
-						</li>
-					</ul>
-				  </div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-header" id="headingSix">
-				  <h5 class="mb-0">
-					<img src="assets/icone/Services.png" alt="" class="nav_icone_bars" id="icone_service">
-					  <button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal6" aria-expanded="false" aria-controls="collapseSix">
-					  
-					  Services
-					</button>
-				  </h5>
-				</div>
-				<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-				  <div class="card-body">
-					<ul>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_whiskies.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Lounges / Whiskies / Cocktails</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_rooftop.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à rooftop</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_vin.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à vins</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_pubs _ tapas.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Pubs / Bars à tapas</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_billard.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à thèmes / Jeux / Billards</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/concert_bar.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Concerts bars</a>
-							<!-- </div> -->
-						</li>
-						<li class="mb-3">
-							<img class="" src="assets/image/bar_chat.png" style="height:45px" alt="">
-							<!-- <div class="pl-1"> -->
-								<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à chats</a>
-							<!-- </div> -->
-						</li>
-					</ul>
-				  </div>
-				</div>
-			</div>
-
 			
-			<div class="card">
-				<div class="card-header" id="headingSix">
-				  <h5 class="mb-0">
-					<i class='fa-solid fa-user text-white'></i>
-					  <button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal6Resp" aria-expanded="false" aria-controls="collapseSix">
-					  
-					  Se connecter
-					</button>
-				  </h5>
-				</div>
 				
-			</div>
-			<div class="card">
-				<div class="card-header" id="headingSix">
-				  <h5 class="mb-0">
-					<i class="fa-solid fa-user-tie text-white"></i>
-					  <button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal6Resp" aria-expanded="false" aria-controls="collapseSix">
-					  
-					Espace pro
-					</button>
-				  </h5>
 				</div>
-				
-			</div>
-			<div class="card">
-				<div class="card-header" id="headingSix">
-				  <h5 class="mb-0">
-					<img src="assets/icone/fr-flag.png" class="nav_icone_bars">
-					  <button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal6Resp" aria-expanded="false" aria-controls="collapseSix">
-					  
-					Français
+				<div class="card">
+				<div class="card-header" id="headingTwo">
+					<h5 class="mb-0">
+						<img src="assets/icone/Ou_Boire.png" alt="" class="nav_icone_bars" id="icone_ou_boire"> 
+					<button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal2" aria-expanded="false" aria-controls="collapseTwo">
+						
+						Où boire
 					</button>
-				  </h5>
+					</h5>
 				</div>
-				
-			</div>
-			<div class="card">
-				<div class="card-header" id="headingSix">
-				  <h5 class="mb-0">
-					<img src="assets/icone/eng-flag.png" class="nav_icone_bars">
-					  <button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal6Resp" aria-expanded="false" aria-controls="collapseSix">
-					  
-					Anglais
+				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+					<div class="card-body">
+						
+					</div>
+				</div>
+				</div>
+				<div class="card">
+				<div class="card-header" id="headingThree">
+					<h5 class="mb-0">
+						<img src="assets/icone/Ou_Manger.png" alt="" class="nav_icone_bars" id="icone_ou_manger">
+						<button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal3" aria-expanded="false" aria-controls="collapseThree">
+						
+						Où manger
 					</button>
-				  </h5>
+					</h5>
 				</div>
-				
-			</div>
-			
-		  </div>
+				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+					<div class="card-body">
+						<ul>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_whiskies.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Lounges / Whiskies / Cocktails</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_rooftop.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à rooftop</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_vin.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à vins</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_pubs _ tapas.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Pubs / Bars à tapas</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_billard.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à thèmes / Jeux / Billards</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/concert_bar.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Concerts bars</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_chat.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à chats</a>
+								<!-- </div> -->
+							</li>
+						</ul>
+					</div>
+				</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingFour">
+					<h5 class="mb-0">
+						<img src="assets/icone/Balades.png" alt="" class="nav_icone_bars" id="icone_balade"> 
+						<button class="btn btn-link text-white collapsed"data-toggle="modal" data-target="#myModal4" aria-expanded="false" aria-controls="collapseFour">
+						
+						Balades
+						</button>
+					</h5>
+					</div>
+					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+					<div class="card-body">
+						<ul>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_whiskies.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Lounges / Whiskies / Cocktails</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_rooftop.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à rooftop</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_vin.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à vins</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_pubs _ tapas.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Pubs / Bars à tapas</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_billard.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à thèmes / Jeux / Billards</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/concert_bar.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Concerts bars</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_chat.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à chats</a>
+								<!-- </div> -->
+							</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingFive">
+					<h5 class="mb-0">
+						<img src="assets/icone/Activites.png" alt="" class="nav_icone_bars" id="icone_activite">
+						<button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal5" aria-expanded="false" aria-controls="collapseFive">
+						
+							Activités
+						</button>
+					</h5>
+					</div>
+					<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+					<div class="card-body">
+						<ul>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_whiskies.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Lounges / Whiskies / Cocktails</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_rooftop.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à rooftop</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_vin.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à vins</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_pubs _ tapas.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Pubs / Bars à tapas</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_billard.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à thèmes / Jeux / Billards</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/concert_bar.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Concerts bars</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_chat.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à chats</a>
+								<!-- </div> -->
+							</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingSix">
+					<h5 class="mb-0">
+						<img src="assets/icone/Services.png" alt="" class="nav_icone_bars" id="icone_service">
+						<button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal6" aria-expanded="false" aria-controls="collapseSix">
+						
+						Services
+						</button>
+					</h5>
+					</div>
+					<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+					<div class="card-body">
+						<ul>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_whiskies.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Lounges / Whiskies / Cocktails</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_rooftop.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à rooftop</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_vin.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à vins</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_pubs _ tapas.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Pubs / Bars à tapas</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_billard.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à thèmes / Jeux / Billards</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/concert_bar.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Concerts bars</a>
+								<!-- </div> -->
+							</li>
+							<li class="mb-3">
+								<img class="" src="assets/image/bar_chat.png" style="height:45px" alt="">
+								<!-- <div class="pl-1"> -->
+									<a href="" class="text-white ml-2" style="font-size: 13px;">Bars à chats</a>
+								<!-- </div> -->
+							</li>
+						</ul>
+					</div>
+					</div>
+				</div>
 
-
-		
+				
+				<div class="card">
+					<div class="card-header" id="headingSix">
+					<h5 class="mb-0">
+						<i class='fa-solid fa-user text-white'></i>
+						<button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal6Resp" aria-expanded="false" aria-controls="collapseSix">
+						
+						Se connecter
+						</button>
+					</h5>
+					</div>
+					
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingSix">
+					<h5 class="mb-0">
+						<i class="fa-solid fa-user-tie text-white"></i>
+						<button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal6Resp" aria-expanded="false" aria-controls="collapseSix">
+						
+						Espace pro
+						</button>
+					</h5>
+					</div>
+					
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingSix">
+					<h5 class="mb-0">
+						<img src="assets/icone/fr-flag.png" class="nav_icone_bars">
+						<button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal6Resp" aria-expanded="false" aria-controls="collapseSix">
+						
+						Français
+						</button>
+					</h5>
+					</div>
+					
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingSix">
+					<h5 class="mb-0">
+						<img src="assets/icone/eng-flag.png" class="nav_icone_bars">
+						<button class="btn btn-link text-white collapsed" data-toggle="modal" data-target="#myModal6Resp" aria-expanded="false" aria-controls="collapseSix">
+						
+						Anglais
+						</button>
+					</h5>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
 	</div>
 
 	<!-- Navigation -->
-	<div class="container-fluid" id="navigation">
+	<div class="" id="navigation">
 		<!-- Navbar -->
 		<div class="container">
 			<div class="row">
@@ -902,12 +899,11 @@
 				</div>
 			</div>
 		</div>
-		
 	</div>
 	
-	
 	<!-- Bannière -->
-	<div class="container-fluid px-0" id="banniere">
+	<div class="px-0" id="banniere">
+
 		<div class="masque"></div>
 		
 		<div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
@@ -927,19 +923,26 @@
 			</div>
 		</div>
 
-		<div id="champ-recherche">
-			<div id="form-banniere">
-				<div>
-					<h1 id="titre_banniere" class="titre">Une nuit insolite, une sortie et c’est parti !</h1>
-					<form>
-						<input type="" name="" placeholder="Mot clé (Ex : Dormir, bars, restaurants...)" class="form-control">
-						<input type="" name="" placeholder="Lieu (Ex : Bordeaux)" class="form-control input_2">
-						<a href="#" class="btn btn-warning" id="btn-rechercher">Rechercher</a>
-					</form>
-					<img id="favoris" src="assets/image/igoguide-mes-favoris@4x.png" alt="">
+		<div class="container h-100">
+			<div class="row h-100">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 h-100">
+					<div id="champ-recherche">
+						<div id="form-banniere">
+							<div>
+								<h1 id="titre_banniere" class="titre">Une nuit insolite, une sortie et c’est parti !</h1>
+								<form>
+									<input type="" name="" placeholder="Mot clé (Ex : Dormir, bars, restaurants...)" class="form-control">
+									<input type="" name="" placeholder="Lieu (Ex : Bordeaux)" class="form-control input_2">
+									<a href="#" class="btn btn-warning" id="btn-rechercher">Rechercher</a>
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+		
+		<img id="favoris" src="assets/image/igoguide-mes-favoris@4x.png" alt="">
 	</div>
 
 	<!-- Comment ça marche -->
@@ -1124,7 +1127,6 @@
 		</div>
 		
 	</div>
-
 
 	<!-- Ou aller -->
 	<div class="container-fluid bg-white py-5" style="overflow: hidden; ">
@@ -1581,7 +1583,6 @@
 		</div>
 	</div>
 
-
 	<!-- BLOG -->
 	<div class="container-fluid pb-5" id="blog">
 		<div class="container mt-5 pt-2">
@@ -1690,7 +1691,6 @@
 	</div>
 	</div>
 
-
 	<!-- REJOIGNEZ-NOUS ! -->
 	<div class="container-fluid py-5 mt-5" id="defilement_transforme" style="overflow: hidden; background-color: #fee085; background-color: white;">
 		<div class="container move pt-2">
@@ -1736,7 +1736,6 @@
 		</div>
 		
 	</div>
-
 
 	<!-- FOOTER -->
 	<div class="container-fluid" id="footer" style="background-color: #2d2925;">
@@ -1874,98 +1873,99 @@
 
 	<!-- The Modal -->
 	<div class="modal modal-modif" id="myModal1">
-	<div class="modal-dialog">
-	  <div class="modal-content">
+		<div class="modal-dialog">
+			<div class="modal-content">
   
-		<!-- Modal Header -->
-		<!-- <div class="modal-header">
-		  <h4 class="modal-title"></h4>
-		  <button type="button" class="close" data-dismiss="modal">&times;</button>
-		</div> -->
-  
-		<!-- Modal body -->
-		<div class="modal-body">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<br>
-			<ul class="list-group">
-				<li class="list-group-item list-v-center">
-					<img class="" src="assets/image/cabane_arbres.png" style="height:45px;width: 45px;" alt="">
+				<!-- Modal Header -->
+				<!-- <div class="modal-header">
+				<h4 class="modal-title"></h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div> -->
+		
+				<!-- Modal body -->
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<br>
+					<ul class="list-group">
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/cabane_arbres.png" style="height:45px;width: 45px;" alt="">
 					
-					<div class="pl-1">
-						<a href="" class=" ml-2" style="font-size: 13px; ">Cabane dans les arbres</a>
-					</div>
-				</li>
-				<li class=" list-group-item list-v-center">
-					<img class="" src="assets/image/cabane_sous_terre.png" style="height:45px;width: 45px;" alt="">
-					<div class="pl-1">
-						<a href="" class=" ml-2" style="font-size: 13px;">Cabane sous terre</a>
-					</div>
-				</li>
-				<li class=" list-group-item list-v-center">
-					<img class="" src="assets/image/cabane_sur_terre.png" style="height:45px;width: 45px;" alt="">
-					<div class="pl-1">
-						<a href="" class=" ml-2" style="font-size: 13px;">Cabane sur terre</a>
-					</div>
-				</li>
-				<li class=" list-group-item list-v-center">
-					<img class="" src="assets/image/cabane_sur_l_eau.png" style="height:45px;width: 45px;" alt="">
-					<div class="pl-1">
-						<a href="" class=" ml-2" style="font-size: 13px;">Cabane sur l'eau</a>
-					</div>
-				</li>
-				<li class=" list-group-item list-v-center">
-					<img class="" src="assets/image/bulle.png" style="height:45px;width: 45px;" alt="">
-					<div class="pl-1">
-						<a href="" class="ml-2" style="font-size: 13px;">Bulles</a>
-					</div>
-				</li>
-				<li class=" list-group-item list-v-center">
-					<img class="" src="assets/image/tipis_tente_yourte.png" style="height:45px;width: 45px;" alt="">
-					<div class="pl-1">
-						<a href="" class=" ml-2" style="font-size: 13px;">Tipis / tente / Yourte</a>
-					</div>
-				</li>
-				<li class=" list-group-item list-v-center">
-					<img class="" src="assets/image/habitat_roulant.png" style="height:45px;width: 45px;" alt="">
-					<div class="pl-1">
-						<a href="" class=" ml-2" style="font-size: 13px;">Habitas roulants</a>
-					</div>
-				</li>
-				<li class=" list-group-item list-v-center">
-					<img class="" src="assets/image/monument_historique.png" style="height:45px;width: 45px;" alt="">
-					<div class="pl-1">
-						<a href="" class=" ml-2" style="font-size: 13px;">Monuments historiques</a>
-					</div>
-				</li>
-				<li class=" list-group-item list-v-center">
-					<img class="" src="assets/image/bateau.png" style="height:45px;width: 45px;" alt="">
-					<div class="pl-1">
-						<a href="" class=" ml-2" style="font-size: 13px;">Bateaux</a>
-					</div>
-				</li>
-				<li class=" list-group-item list-v-center">
-					<img class="" src="assets/image/cabane_arbres.png" style="height:45px;width: 45px;" alt="">
-					<div class="pl-1">
-						<a href="" class=" ml-2" style="font-size: 13px;">Hebergements de charme</a>
-					</div>
-				</li>
-				<li class=" list-group-item list-v-center">
-					<img class="" src="assets/image/hotels_atypiques.png" style="height:45px;width: 45px;" alt="">
-					<div class="pl-1">
-						<a href="" class=" ml-2" style="font-size: 13px;">Hôtels atypiques</a>
-					</div>
-				</li>
-			</ul>
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px; ">Cabane dans les arbres</a>
+							</div>
+						</li>
+						<li class=" list-group-item list-v-center">
+							<img class="" src="assets/image/cabane_sous_terre.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Cabane sous terre</a>
+							</div>
+						</li>
+						<li class=" list-group-item list-v-center">
+							<img class="" src="assets/image/cabane_sur_terre.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Cabane sur terre</a>
+							</div>
+						</li>
+						<li class=" list-group-item list-v-center">
+							<img class="" src="assets/image/cabane_sur_l_eau.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Cabane sur l'eau</a>
+							</div>
+						</li>
+						<li class=" list-group-item list-v-center">
+							<img class="" src="assets/image/bulle.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Bulles</a>
+							</div>
+						</li>
+						<li class=" list-group-item list-v-center">
+							<img class="" src="assets/image/tipis_tente_yourte.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Tipis / tente / Yourte</a>
+							</div>
+						</li>
+						<li class=" list-group-item list-v-center">
+							<img class="" src="assets/image/habitat_roulant.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Habitas roulants</a>
+							</div>
+						</li>
+						<li class=" list-group-item list-v-center">
+							<img class="" src="assets/image/monument_historique.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Monuments historiques</a>
+							</div>
+						</li>
+						<li class=" list-group-item list-v-center">
+							<img class="" src="assets/image/bateau.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Bateaux</a>
+							</div>
+						</li>
+						<li class=" list-group-item list-v-center">
+							<img class="" src="assets/image/cabane_arbres.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Hebergements de charme</a>
+							</div>
+						</li>
+						<li class=" list-group-item list-v-center">
+							<img class="" src="assets/image/hotels_atypiques.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Hôtels atypiques</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+		
+				<!-- Modal footer -->
+				<!-- <div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				</div> -->
+		
+			</div>
 		</div>
-  
-		<!-- Modal footer -->
-		<!-- <div class="modal-footer">
-		  <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
-		</div> -->
-  
-	  </div>
 	</div>
-	</div>
+
 	<div class="modal modal-modif" id="myModal2">
 		<div class="modal-dialog">
 		<div class="modal-content">
@@ -2028,222 +2028,221 @@
 		</div>
 		</div>
 	</div>
+
 	<div class="modal modal-modif" id="myModal3">
 		<div class="modal-dialog">
-		<div class="modal-content">
-	
-			
-	
-			<!-- Modal body -->
-			<div class="modal-body">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<br>
-				<ul class="list-group">
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/restaurants_originaux.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Restaurants originaux</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/restaurants_annimation.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class=" ml-2" style="font-size: 13px;">Restaurants avec animations</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/brasserie_bistrot.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class=" ml-2" style="font-size: 13px;">Brasserie - Bistrot - Auberges</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/cuisine_traditionnelle.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Cuisines traditionnelles</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/cuisine_monde.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Cuisines du monde</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/type_fast_food.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Types fast food / tapas</a>
-						</div>
-					</li>
-				</ul>
+			<div class="modal-content">
+		
+				<!-- Modal body -->
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<br>
+					<ul class="list-group">
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/restaurants_originaux.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Restaurants originaux</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/restaurants_annimation.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Restaurants avec animations</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/brasserie_bistrot.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Brasserie - Bistrot - Auberges</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/cuisine_traditionnelle.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Cuisines traditionnelles</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/cuisine_monde.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Cuisines du monde</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/type_fast_food.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Types fast food / tapas</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+		
 			</div>
-	
-	
-		</div>
 		</div>
 	</div>
+
 	<div class="modal modal-modif" id="myModal4">
 		<div class="modal-dialog">
-		<div class="modal-content">
-	
-	
-			<!-- Modal body -->
-			<div class="modal-body">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<br>
-				<ul class="list-group">
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/au_fil_de_l_eau.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Au fil de l'eau</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/perles_sauvages.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class=" ml-2" style="font-size: 13px;">Randonnées nature</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/monument_historique.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class=" ml-2" style="font-size: 13px;">Sites historiques</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/perles_sauvages.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Les perles sauvages</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/jardins_imaginaire.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Les jardins imaginaires</a>
-						</div>
-					</li>
-				</ul>
+			<div class="modal-content">
+		
+		
+				<!-- Modal body -->
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<br>
+					<ul class="list-group">
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/au_fil_de_l_eau.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Au fil de l'eau</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/perles_sauvages.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Randonnées nature</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/monument_historique.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Sites historiques</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/perles_sauvages.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Les perles sauvages</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/jardins_imaginaire.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Les jardins imaginaires</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+		
+		
 			</div>
-	
-	
-		</div>
 		</div>
 	</div>
+
 	<div class="modal modal-modif" id="myModal5">
 		<div class="modal-dialog">
-		<div class="modal-content">
-	
-	
-			<!-- Modal body -->
-			<div class="modal-body">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<br>
-				<ul class="list-group">
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/restaurants_originaux.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Ateliers et stages</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/restaurants_annimation.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class=" ml-2" style="font-size: 13px;">Activités sportives</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/brasserie_bistrot.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class=" ml-2" style="font-size: 13px;">Activités ludiques</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/cuisine_traditionnelle.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Activités gustative</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/cuisine_monde.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Activités bien-être</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/type_fast_food.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Shoppind artisans et créateurs</a>
-						</div>
-					</li>
-				</ul>
+			<div class="modal-content">
+		
+		
+				<!-- Modal body -->
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<br>
+					<ul class="list-group">
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/restaurants_originaux.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Ateliers et stages</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/restaurants_annimation.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Activités sportives</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/brasserie_bistrot.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Activités ludiques</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/cuisine_traditionnelle.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Activités gustative</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/cuisine_monde.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Activités bien-être</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/type_fast_food.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Shoppind artisans et créateurs</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+		
+		
 			</div>
-	
-	
-		</div>
 		</div>
 	</div>
+
 	<div class="modal modal-modif" id="myModal6">
 		<div class="modal-dialog">
-		<div class="modal-content">
-	
-			
-	
-			<!-- Modal body -->
-			<div class="modal-body">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<br>
-				<ul class="list-group">
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/organisateurs.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Organisateurs</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/photographe.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class=" ml-2" style="font-size: 13px;">Photographes etc.</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/traiteur.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class=" ml-2" style="font-size: 13px;">Traiteurs</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/fleuriste.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Fleuristes</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/location_voiture.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Locations de véhicules</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/location_velo.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Locations de vélos</a>
-						</div>
-					</li>
-					<li class="list-group-item list-v-center">
-						<img class="" src="assets/image/divers_pressing.png" style="height:45px;width: 45px;" alt="">
-						<div class="pl-1">
-							<a href="" class="ml-2" style="font-size: 13px;">Divers</a>
-						</div>
-					</li>
-				</ul>
+			<div class="modal-content">
+		
+				
+		
+				<!-- Modal body -->
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<br>
+					<ul class="list-group">
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/organisateurs.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Organisateurs</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/photographe.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Photographes etc.</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/traiteur.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class=" ml-2" style="font-size: 13px;">Traiteurs</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/fleuriste.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Fleuristes</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/location_voiture.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Locations de véhicules</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/location_velo.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Locations de vélos</a>
+							</div>
+						</li>
+						<li class="list-group-item list-v-center">
+							<img class="" src="assets/image/divers_pressing.png" style="height:45px;width: 45px;" alt="">
+							<div class="pl-1">
+								<a href="" class="ml-2" style="font-size: 13px;">Divers</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+		
+		
 			</div>
-	
-	
-		</div>
 		</div>
 	</div>
-	
-
 	
 
 	<!-- https://www.image-map.net/ -->

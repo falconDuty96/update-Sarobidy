@@ -106,12 +106,14 @@
     }
     
 }
+
 @media all and (max-width: 555px) {
     #region_france_liste {
         padding-left: 10px;
     }
     
 }
+
 @media all and (max-width: 525px) {
     #region_france_liste {
         padding-left: 5px;
@@ -119,5 +121,4 @@
     #region_france {
         justify-content: center;
     }
-    
 }
