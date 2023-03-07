@@ -5,12 +5,12 @@
     .nav-item {
         width: 130px;
     }
-    #form-banniere form{
+    /* #form-banniere form{
         width: 894px;
     } 
     #form-banniere form #btn-rechercher {
         width: 157px;
-    }
+    } */
     .element-rejoindre {
         margin-top: 10px ;
     }
@@ -28,9 +28,42 @@
 }
 
 @media all and (max-width: 991px) {
-    
+    .handwrite{
+        font-size: 27px;
+    }
+    .text-to-show{
+        font-size: 17px;
+    }
+    .header-card img{
+        width: 75%;
+    }
+    .text-limiter {
+        min-height: 50px;
+    }
+    body{
+        font-size: .9rem;
+    }
+    #titre_banniere{
+        font-size: 2rem;
+    }
+    #form-banniere form #btn-rechercher{
+        font-size: .9rem;
+    }
+    #form-banniere form input::placeholder{
+        font-size: .85rem;
+    }
     #blog-slider {
         grid-template-columns: repeat(2, 1fr);
+    }
+    h2.entete_row{
+        font-size: 1.75rem;
+    }
+    h5.entete_row{
+        font-size: 1.2rem;
+    }
+
+    #banniere {
+      margin-top: 71px;
     }
 
     .ccm {
@@ -51,7 +84,7 @@
     #bars {
         display: inline-block;
     }
-    #form-banniere form{
+    /* #form-banniere form{
         width: 685px;
     } 
     #form-banniere form input{
@@ -59,11 +92,13 @@
     } 
     #form-banniere form #btn-rechercher {
         width: 172px;
-    }   
+    }    */
     #entete_logo {
         position: fixed;
         z-index: 1200;
         width: 100%;
+        top: 0;
+        left: 0;
     }
     #trouver_departement {
         width: 100% ;
@@ -111,7 +146,7 @@
       }
 
 
-    #form-banniere form {
+    /* #form-banniere form {
         width: 480px;
     }
     #form-banniere form input {
@@ -119,10 +154,11 @@
     }
     #form-banniere form #btn-rechercher {
         width: 143px;
-    }
-    .card-height-reform {
+    } */
+
+    /* .card-height-reform {
         height: 540px;
-    }
+    } */
     #region_france_liste {
         padding-left: 25px ;
     }
@@ -136,6 +172,18 @@
 @media all and (max-width: 575px) {
     #slogan {
         display: none ;
+    }
+    #titre_banniere{
+        font-size: 1.9rem;
+    }
+    h2.entete_row{
+        font-size: 1.55rem;
+    }
+    #form-banniere form #btn-rechercher{
+        width: calc(100% / 3);
+    }
+    #form-banniere form #btn-rechercher{
+        font-size: small;
     }
     
 }
@@ -153,5 +201,22 @@
     }
     #region_france {
         justify-content: center;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #form-banniere form #btn-rechercher{
+        width: max-content;
+    }
+    #form-banniere form #btn-rechercher .__icon{
+        display: block;
+        font-size: large;
+    }
+    
+    #form-banniere form #btn-rechercher .__text{
+        display: none;
+    }
+    .header-card img{
+        width: 100%;
     }
 }
