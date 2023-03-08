@@ -1,4 +1,11 @@
 @media all and (max-width: 1199px) {
+    
+    .show_favorites{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .__card_big_blog{
+        grid-template-columns: repeat(3, 1fr);
+    }
     .nav-item {
         width: 130px;
     }
@@ -17,17 +24,13 @@
     #region_france_liste {
         padding-left: 5px ;
     }
-    .content-banniere-speciale {
-        margin-top: 55px ;
- 
-    }
-    .masque-specialisation {
-        height: 200px ;
-    }
     
 }
 
 @media all and (max-width: 991px) {
+    .__card_big_blog{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .handwrite{
         font-size: 27px;
     }
@@ -62,8 +65,8 @@
         font-size: 1.2rem;
     }
 
-    #banniere {
-      margin-top: 71px;
+    #banniere, .__top_block{
+      margin-top: 71px !important;
     }
 
     .ccm {
@@ -116,15 +119,16 @@
     #region_france_liste {
         padding-left: 40px ;
     }
-    .content-banniere-speciale {
-        width: 500px ;
-      }
-      #maps {
+    #maps {
         display: none ;
     }
 }
 
 @media all and (max-width: 767px) {
+    
+    .show_favorites{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .ccm {
         width: 100% ;
     }
@@ -163,9 +167,6 @@
         padding-left: 25px ;
     }
 
-    .content-banniere-speciale {
-        width: 450px ;
-      }
     
 }
 
@@ -205,6 +206,15 @@
 }
 
 @media all and (max-width: 500px) {
+    
+    
+    .show_favorites{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .__card_big_blog{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     #form-banniere form #btn-rechercher{
         width: max-content;
     }
