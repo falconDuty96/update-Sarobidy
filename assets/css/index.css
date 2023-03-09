@@ -420,7 +420,7 @@ body {
   object-fit: fill;
   position: relative;
   left: 0;
-  top: 5px;
+  top: 0;
   margin: auto;
 }
 
@@ -452,6 +452,7 @@ body {
   /* font-weight: 400; */
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
+  margin-top: 5px;
 }
 .toBold:hover {
   text-decoration: none;
